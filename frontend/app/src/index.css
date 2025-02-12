@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .helper{
+      @apply border-[2px] border-solid border-[red]
+  }
+
+  .reg_col_flex{
+      @apply flex flex-col justify-center items-center
+  }
+
+  .reg_row_flex{
+      @apply flex flex-row justify-center items-center
+  }
+
+  .page{
+      @apply min-w-full min-h-screen p-10
+  }
+
+  .title{
+    @apply text-3xl bg-gradient-to-r from-[#ff4e50] via-[#f9d423] to-[#ff5e62] bg-clip-text text-transparent
+  }
+
+  .scale-up{
+    @apply hover:scale-105 transition
+  }
+  
+  .text-gradient{
+    @apply bg-gradient-to-r from-[#ff4e50] via-[#f9d423] to-[#ff5e62] bg-clip-text text-transparent
+  }
+
+  
+}
+
+@font-face {
+  font-family: "PacificoTitleFont";
+  src: url('./assets/fonts/Pacifico-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+  body {
+    @apply font-sans;
+  }
+}
